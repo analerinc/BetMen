@@ -1,0 +1,367 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&family=Roboto&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  height: 30px;
+  background-color: #206a5d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 768px) {
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: auto;
+  }
+}
+header a {
+  color: #f1f1e8;
+  text-decoration: none;
+  margin: 0 20px;
+}
+@media (max-width: 768px) {
+  header a {
+    border-bottom: 2px solid #bfdcae;
+    width: 100%;
+    text-align: center;
+    margin: 10px;
+  }
+}
+header .sign {
+  display: none;
+}
+header .sign a {
+  color: #ff4b5c;
+}
+@media (max-width: 1024px) {
+  header .sign {
+    display: block;
+  }
+}
+@media (max-width: 768px) {
+  header .sign {
+    border-bottom: 2px solid #bfdcae;
+    width: 100%;
+    text-align: center;
+    margin: 3px;
+  }
+}
+
+.log {
+  height: 80px;
+  background-color: #bfdcae;
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 1024px) {
+  .log {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media (max-width: 768px) {
+  .log {
+    display: none;
+    background-color: #bfdcae;
+  }
+}
+.log .bet {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 768px) {
+  .log .bet {
+    display: none;
+  }
+}
+.log .bet img {
+  height: 50px;
+  margin: 0 20px;
+}
+.log .bet h1 {
+  text-transform: uppercase;
+  font-family: "Fredoka One", cursive;
+}
+.log .bet span {
+  text-transform: uppercase;
+  color: #ff4b5c;
+  font-family: "Fredoka One", cursive;
+  margin-left: 5px;
+  font-size: 30px;
+}
+.log .form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 20px 30px;
+}
+@media (max-width: 1024px) {
+  .log .form {
+    display: none;
+  }
+}
+.log .form .forma {
+  margin-top: 20px;
+}
+.log .form .forma input {
+  background-color: #206a5d;
+  color: #f1f1e8;
+  border: none;
+  border-radius: 2px;
+  height: 20px;
+  padding: 10px;
+}
+.log .form .forma button {
+  background-color: #ff4b5c;
+  color: #f1f1e8;
+  border: none;
+  border-radius: 2px;
+  height: 20px;
+  width: 50px;
+  cursor: pointer;
+}
+.log .acc {
+  display: flex;
+  margin-left: 240px;
+  margin-top: 3px;
+}
+.log .acc p {
+  color: #206a5d;
+  font-size: 15px;
+}
+.log .acc a {
+  color: #ff4b5c;
+  font-size: 15px;
+}
+
+.hero {
+  background-image: url("../images/intro.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+@media (max-width: 768px) {
+  .hero {
+    display: none;
+  }
+}
+.hero .be {
+  margin-bottom: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  margin-top: 50px;
+}
+.hero .be h2 {
+  color: white;
+  font-family: "Fredoka One", cursive;
+  width: 550px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero button {
+  background-color: #206a5d;
+  color: #bfdcae;
+  border: none;
+  border-radius: 5px;
+  height: 30px;
+  width: 100px;
+  cursor: pointer;
+}
+
+.benefits {
+  background-color: #f1f1e8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.benefits h2 {
+  margin: 40px;
+  color: #206a5d;
+  text-transform: uppercase;
+  font-family: "Fredoka One", cursive;
+}
+.benefits .cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+@media (max-width: 1024px) {
+  .benefits .cards {
+    margin-left: 40px;
+  }
+}
+@media (max-width: 768px) {
+  .benefits .cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+.benefits .cards .card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.benefits .cards .card img {
+  height: 250px;
+  margin-bottom: 20px;
+}
+.benefits .cards .card h4 {
+  color: #ff4b5c;
+  font-family: "Fredoka One", cursive;
+  margin-bottom: 20px;
+}
+.benefits .cards .card p {
+  font-size: 13px;
+  margin-right: 20px;
+  font-family: "Roboto", sans-serif;
+}
+@media (max-width: 1024px) {
+  .benefits .cards .card p {
+    margin-left: 30px;
+  }
+}
+
+.about {
+  margin: 40px 40px;
+}
+@media (max-width: 768px) {
+  .about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+.about h3 {
+  color: #206a5d;
+  font-family: "Fredoka One", cursive;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+@media (max-width: 768px) {
+  .about .text {
+    display: none;
+  }
+}
+.about .text span {
+  color: #ff4b5c;
+  font-family: "Fredoka One", cursive;
+  font-size: medium;
+}
+.about .text p {
+  font-family: "Roboto", sans-serif;
+  font-size: medium;
+  text-align: justify;
+}
+.about .dugme {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+.about .dugme button {
+  background-color: #ff4b5c;
+  color: #f1f1e8;
+  border: none;
+  border-radius: 5px;
+  height: 25px;
+  width: 100px;
+  text-align: center;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #206a5d;
+}
+@media (max-width: 1024px) {
+  footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column-reverse;
+  }
+}
+footer .map {
+  margin: 40px 40px;
+}
+footer .contact {
+  background-color: grey;
+  margin-left: 40px;
+  height: 300px;
+  width: 600px;
+}
+@media (max-width: 768px) {
+  footer .contact {
+    margin-bottom: 40px;
+  }
+}
+@media (max-width: 768px) {
+  footer .contact {
+    margin-right: 40px;
+  }
+}
+footer .contact h3 {
+  text-align: center;
+  color: #206a5d;
+  font-family: "Fredoka One", cursive;
+  text-transform: uppercase;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+footer .contact .podaci {
+  margin-left: 40px;
+}
+footer .contact .podaci input {
+  height: 30px;
+  width: 252px;
+}
+footer .contact .poruka {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 5px;
+}
+footer .contact .poruka input {
+  height: 30px;
+  width: 506px;
+  margin-right: 12px;
+}
+footer .contact .poruka textarea {
+  width: 506px;
+  margin-top: 5px;
+  margin-right: 12px;
+}
+footer .contact button {
+  height: 30px;
+  width: 506px;
+  margin-left: 41px;
+  margin-top: 5px;
+}
+
+/*# sourceMappingURL=style.css.map */
